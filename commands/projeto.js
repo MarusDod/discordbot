@@ -10,20 +10,23 @@ module.exports = {
         const oneDay = 24*60*60 * 1000; // hours*minutes*seconds*milliseconds
         const currDate = new Date()
         const oneSecond = 1000; // hours*minutes*seconds*milliseconds
-	const diffSeconds = Math.ceil(Math.abs((entregaDate.getTime() - currDate.getTime()) / oneSecond));
+	const diffSeconds = Math.ceil(Math.abs((entregaDate.getTime() - currDate.getTime())));
 	let delta = diffSeconds
 
-	const hours = Math.floor(diffSeconds / 3600)
-	delta -= hours * 3600
+	const hours = Math.floor((diffSeconds / 1000) / 3600)
+	delta -= hours * 3600 * 1000
 	
-	const minutes = Math.floor((diffSeconds / 60) % 60)
-	delta -= minutes * 60
-	const seconds = delta % 60
+	const minutes = Math.floor((diffSeconds / (60 * 1000)) % 60)
+	delta -= minutes * 60 * 1000
+	const seconds = Math.floor((delta /1000) % 60)
+	delta -= seconds * 1000
+
+	const milis = delta % 1000
 
         //const diffDays = Math.ceil(Math.abs((entregaDate.getTime() - currDate.getTime()) / oneDay));
 
         //message.channel.send('o que interessa é ter saúde :)')
         //message.channel.send(`faltam ${diffDays} dias para a entrega do projeto`)
-        message.channel.send(`faltam ${hours} horas ${minutes} minutos e ${seconds} segundos para entregar o projeto ou fudeu`)
+        message.channel.send(`faltam ${hours} horas ${minutes} minutos ${seconds} segundos e ${milis} milissegundos para entregar o projeto ou fudeu`)
     },
 };
