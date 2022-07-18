@@ -1,0 +1,237 @@
+[{
+  "_id": {
+    "$oid": "616c3fcd3551e28ba1a45976"
+  },
+  "desconto": -20,
+  "words": [
+    "chinoca"
+  ]
+},{
+  "_id": {
+    "$oid": "616c3fcd3551e28ba1a45977"
+  },
+  "desconto": -10,
+  "words": [
+    "love",
+    "taiwan"
+  ]
+},{
+  "_id": {
+    "$oid": "616c3fcd3551e28ba1a45978"
+  },
+  "desconto": -12,
+  "words": [
+    "ching",
+    "chong"
+  ]
+},{
+  "_id": {
+    "$oid": "616c3fcd3551e28ba1a45979"
+  },
+  "desconto": -1000,
+  "words": [
+    "bad",
+    "ccp"
+  ]
+},{
+  "_id": {
+    "$oid": "616c3fcd3551e28ba1a4597a"
+  },
+  "desconto": -500000,
+  "words": [
+    "winnie",
+    "poo"
+  ]
+},{
+  "_id": {
+    "$oid": "616c3fcd3551e28ba1a4597b"
+  },
+  "desconto": -50,
+  "words": [
+    "hongkong",
+    "independent"
+  ]
+},{
+  "_id": {
+    "$oid": "616c3fcd3551e28ba1a4597c"
+  },
+  "desconto": -1000,
+  "words": [
+    "bad",
+    "china"
+  ]
+},{
+  "_id": {
+    "$oid": "616c3fcd3551e28ba1a4597d"
+  },
+  "desconto": 1000,
+  "words": [
+    "ccp",
+    "good"
+  ]
+},{
+  "_id": {
+    "$oid": "616c3fcd3551e28ba1a4597e"
+  },
+  "desconto": -50000,
+  "words": [
+    "tank",
+    "man"
+  ]
+},{
+  "_id": {
+    "$oid": "616c3fcd3551e28ba1a4597f"
+  },
+  "desconto": 1000,
+  "words": [
+    "love",
+    "ccp"
+  ]
+},{
+  "_id": {
+    "$oid": "616c3fcd3551e28ba1a45980"
+  },
+  "desconto": 50,
+  "words": [
+    "taiwan",
+    "china"
+  ]
+},{
+  "_id": {
+    "$oid": "616c3fcd3551e28ba1a45981"
+  },
+  "desconto": 50,
+  "words": [
+    "china",
+    "good"
+  ]
+},{
+  "_id": {
+    "$oid": "616c3fcd3551e28ba1a45982"
+  },
+  "desconto": -100000,
+  "words": [
+    "tiananmen",
+    "square"
+  ]
+},{
+  "_id": {
+    "$oid": "616c3fcd3551e28ba1a45983"
+  },
+  "desconto": -50,
+  "words": [
+    "taiwan",
+    "pais"
+  ]
+},{
+  "_id": {
+    "$oid": "616c3fcd3551e28ba1a45984"
+  },
+  "desconto": -100,
+  "words": [
+    "taiwan",
+    "independent"
+  ]
+},{
+  "_id": {
+    "$oid": "616c3fcd3551e28ba1a45985"
+  },
+  "desconto": 100000,
+  "words": [
+    "xi",
+    "best"
+  ]
+},{
+  "_id": {
+    "$oid": "616c3fcd3551e28ba1a45986"
+  },
+  "desconto": 120,
+  "words": [
+    "único",
+    "filho"
+  ]
+},{
+  "_id": {
+    "$oid": "616c3fcd3551e28ba1a45987"
+  },
+  "desconto": 1000000,
+  "words": [
+    "china",
+    "number",
+    "1"
+  ]
+},{
+  "_id": {
+    "$oid": "616c3fcd3551e28ba1a45988"
+  },
+  "desconto": -15,
+  "words": [
+    "olhos",
+    "bico"
+  ]
+},{
+  "_id": {
+    "$oid": "616c3fcd3551e28ba1a45989"
+  },
+  "desconto": -50,
+  "words": [
+    "hongkong",
+    "pais"
+  ]
+},{
+  "_id": {
+    "$oid": "616c4998855195cbfbaa214c"
+  },
+  "desconto": 230,
+  "words": [
+    "like",
+    "china"
+  ]
+},{
+  "_id": {
+    "$oid": "616dd18acca088d779257f5e"
+  },
+  "desconto": 200,
+  "words": [
+    "gost",
+    "china"
+  ]
+},{
+  "_id": {
+    "$oid": "61844bd46bc437fb882734a6"
+  },
+  "desconto": -1000,
+  "words": [
+    "taiwan",
+    "country"
+  ]
+},{
+  "_id": {
+    "$oid": "61997f0e2319ea4fcc7080e6"
+  },
+  "desconto": "-300",
+  "words": [
+    "uyghur",
+    "genocide",
+    "bad"
+  ]
+},{
+  "_id": {
+    "$oid": "61997f252319ea4fcc7080e7"
+  },
+  "desconto": "-300",
+  "words": [
+    "uyghur",
+    "genocidio",
+    "mau"
+  ]
+},{
+  "_id": {
+    "$oid": "619ae63d11c194e23551c204"
+  },
+  "desconto": -500,
+  "words": [
+    "china",
+    "shithole"
+  ]
+}]

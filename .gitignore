@@ -1,0 +1,8 @@
+config.json
+.idea
+.env
+listen.js
+discord/
+.github/
+/node_modules/
+videos/*
