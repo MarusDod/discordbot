@@ -30,6 +30,6 @@ module.exports = {
 
         //message.channel.send('o que interessa é ter saúde :)')
         //message.channel.send(`faltam ${diffDays} dias para a entrega do projeto`)
-        message.channel.send(`faltam ${days} dias ${hours} horas ${minutes} minutos ${seconds} segundos e ${milis} milissegundos para entregar o projeto ou fudeu`)
+        message.channel.send(`faltam ${days} dias ${hours} horas ${minutes} minutos ${seconds} segundos e ${milis} milissegundos para a entrega do projeto`)
     },
 };
