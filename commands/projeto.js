@@ -10,9 +10,9 @@ module.exports = {
         const oneDay = 24*60*60 * 1000; // hours*minutes*seconds*milliseconds
         const currDate = new Date()
         const oneSecond = 1000; // hours*minutes*seconds*milliseconds
+	const diffSeconds = Math.ceil(Math.abs((entregaDate.getTime() - currDate.getTime()) / oneSecond));
 	let delta = diffSeconds
 
-	const diffSeconds = Math.ceil(Math.abs((entregaDate.getTime() - currDate.getTime()) / oneSecond));
 	const hours = Math.floor(diffSeconds / 3600)
 	delta -= hours * 3600
 	
