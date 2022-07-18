@@ -8,14 +8,14 @@ module.exports = {
     description: 'dias até entrega do projeto!',
     execute(message, args) {
         const oneDay = 24*60*60 * 1000; // hours*minutes*seconds*milliseconds
-        const oneMinute = 60 * 1000; // hours*minutes*seconds*milliseconds
+        const oneSecond = 1000; // hours*minutes*seconds*milliseconds
         const currDate = new Date()
 
         //const diffDays = Math.ceil(Math.abs((entregaDate.getTime() - currDate.getTime()) / oneDay));
-	const diffMinutes = Math.ceil(Math.abs((entregaDate.getTime() - currDate.getTime()) / oneMinute));
+	const diffSeconds = Math.ceil(Math.abs((entregaDate.getTime() - currDate.getTime()) / oneSecond));
 
         //message.channel.send('o que interessa é ter saúde :)')
         //message.channel.send(`faltam ${diffDays} dias para a entrega do projeto`)
-        message.channel.send(`faltam ${Math.floor(diffMinutes / 60)}h${Math.floor(diffMinutes % 60)} horas para entregar o projeto ou fudeu`)
+        message.channel.send(`faltam ${Math.floor(diffSeconds / 3600)} horas ${Math.floor((diffSeconds / 60) % 60)} minutos e ${Math.floor(diffSeconds)} segundos para entregar o projeto ou fudeu`)
     },
 };
