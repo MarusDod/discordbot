@@ -11,7 +11,7 @@
     "maintenance": "heroku config:set MAINTENANCE=1",
     "production": "heroku config:unset MAINTENANCE",
     "local": "heroku local",
-    "push": "git add . && git commit -m . && git push origin master"
+    "push": "git add . && git commit -m . && git push heroku master"
   },
   "keywords": [],
   "author": "",

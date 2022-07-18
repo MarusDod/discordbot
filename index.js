@@ -53,7 +53,7 @@ for (const file of commandFiles) {
 const setBotActivity = status => 
     db.collection('logs').doc(new Date().getTime().toString()).set({status})
 
-entregaDate = new Date("2022-7-18 UTC")
+entregaDate = new Date("2022-7-19 UTC")
 
 client.once('ready', async () => {
     console.log('ready!')
