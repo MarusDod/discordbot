@@ -16,7 +16,7 @@ module.exports = {
 	const days = Math.floor(diffMillis / (1000 * 3600 * 24))
 	delta -= days * 3600 * 1000 * 24
 
-	const hours = Math.floor((diffMillis / 1000) / 3600)
+	const hours = Math.floor(((diffMillis / 1000) / 3600)  % 24)
 	delta -= hours * 3600 * 1000
 	
 	const minutes = Math.floor((diffMillis / (60 * 1000)) % 60)
