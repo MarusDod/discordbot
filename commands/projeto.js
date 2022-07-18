@@ -8,9 +8,9 @@ module.exports = {
     description: 'dias até entrega do projeto!',
     execute(message, args) {
         const oneDay = 24*60*60 * 1000; // hours*minutes*seconds*milliseconds
+        const currDate = new Date()
         const oneSecond = 1000; // hours*minutes*seconds*milliseconds
 	const diffSeconds = Math.ceil(Math.abs((entregaDate.getTime() - currDate.getTime()) / oneSecond));
-        const currDate = new Date()
 	const hours = Math.floor(diffSeconds / 3600)
 	const delta = hours * 3600
 	
