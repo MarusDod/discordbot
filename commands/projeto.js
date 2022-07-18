@@ -12,7 +12,7 @@ module.exports = {
         const oneSecond = 1000; // hours*minutes*seconds*milliseconds
 	const diffSeconds = Math.ceil(Math.abs((entregaDate.getTime() - currDate.getTime()) / oneSecond));
 	const hours = Math.floor(diffSeconds / 3600)
-	const delta = hours * 3600
+	let delta = hours * 3600
 	
 	const minutes = Math.floor((diffSeconds / 60) % 60)
 	delta += minutes * 60
