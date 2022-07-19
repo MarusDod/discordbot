@@ -7,6 +7,8 @@ module.exports = {
     name: 'projeto',
     description: 'dias até entrega do projeto!',
     execute(message, args) {
+	if(message.user.id == '158715505614651394')
+	    return
         const oneDay = 24*60*60 * 1000; // hours*minutes*seconds*milliseconds
         const currDate = new Date()
         const oneSecond = 1000; // hours*minutes*seconds*milliseconds
