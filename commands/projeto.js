@@ -7,8 +7,11 @@ module.exports = {
     name: 'projeto',
     description: 'dias até entrega do projeto!',
     execute(message, args) {
-	if(message.author.id == '158715505614651394')
+	if(message.author.id == '158715505614651394'){
+	    message.reply(`vai pó caralho vrau`)
 	    return
+	}
+
         const oneDay = 24*60*60 * 1000; // hours*minutes*seconds*milliseconds
         const currDate = new Date()
         const oneSecond = 1000; // hours*minutes*seconds*milliseconds
