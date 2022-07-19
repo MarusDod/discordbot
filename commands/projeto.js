@@ -8,7 +8,8 @@ module.exports = {
     description: 'dias até entrega do projeto!',
     execute(message, args) {
 	if(message.author.id == '158715505614651394'){
-	    message.reply(`vai pó caralho vrau`)
+            //message.reply(`vai pó caralho vrau`)
+	    message.delete();
 	    return
 	}
 
