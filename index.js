@@ -148,7 +148,7 @@ client.on('message', async message => {
     if (!message.content.startsWith(process.env.prefix) || message.author.bot) return;
 
     const args = message.content.slice(process.env.prefix.length).trim().split(' ');
-    const command = args.shift().toLowerCase();
+    const command = args.shift();
 
     try {
         client.commands.get(command).execute(message, args);

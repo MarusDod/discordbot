@@ -1,16 +1,24 @@
-require('dotenv').config();
 const client = new (require('coinmarketcap-api'))(process.env.COIN_API_KEY);
+const {db} = require('../firebase.js');
 
+const {getAtivo} = require('./ativarVrau.js')
+
+const me = '975711811083067422'
+const vrau = '158715505614651394'
 
 
 module.exports = {
     name: 'projeto',
     description: 'dias até entrega do projeto!',
-    execute(message, args) {
-	if(message.author.id == '158715505614651394'){
+    async execute(message, args) {
+	if(message.author.id == vrau){
             //message.reply(`vai pó caralho vrau`)
-	    message.delete();
-	    return
+	    const ativo = await getAtivo(vrau)
+
+	    if(ativo === false){
+		    await message.delete();
+		    return
+	    }
 	}
 
         const oneDay = 24*60*60 * 1000; // hours*minutes*seconds*milliseconds

@@ -6,6 +6,7 @@
     nodejs
     heroku
     glibc
+    gcc
     python38
     gnumake
   ];
