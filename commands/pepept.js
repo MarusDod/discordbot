@@ -2,7 +2,7 @@ const { time } = require('console');
 const fs = require('fs');
 const path = require('path');
 const DropBoxIterator = require('../dropbox')
-const {MessageAttachment} = require("discord.js");
+const {AttachmentBuilder} = require("discord.js");
 
 var memesPath = '/pepespt'
 
@@ -13,9 +13,9 @@ module.exports = {
 
         let db = await (new DropBoxIterator(memesPath)).fetchFolder()
         let {buffer,fileName} = await db.DownloadRandomFile()
-        const attachment = new MessageAttachment(buffer,fileName)
+        const attachment = new AttachmentBuilder(buffer,{name: fileName})
 
-        await message.channel.send(attachment);
+        await message.channel.send({files: [attachment]});
 
     },
 };

@@ -18,6 +18,7 @@ module.exports = {
     name: 'poll',
     description: 'Create a poll',
     async execute(message, args) {
+		console.log(args)
         if(args[0] == 'close'){
             this.close(message,args[1])
             return
@@ -37,10 +38,10 @@ module.exports = {
         const timestamp = new Date().getTime().toString()
 
 
-        const pollMessage = await message.channel.send({embed: {
+        const pollMessage = await message.channel.send({embeds: [{
             title: `${pollEmoji} ${pollTitle}`,
             description: `poll #${timestamp}`,
-            fields}})
+            fields}]})
 
         db
             .collection('poll')
@@ -58,10 +59,10 @@ module.exports = {
     },
 
     async close(message,timestamp){
+	    console.log("timestamp " + timestamp)
         if(timestamp[0] == '#'){
             timestamp = timestamp.substring(1)
         }
-
 
         const poll = await db.collection('poll')
             //.where('channelID','==',timestamp)
@@ -75,19 +76,20 @@ module.exports = {
         const pollMessage = await message.channel.messages.fetch(poll.data().messageID)
 
         const reactions = pollMessage.reactions.cache
-            .filter(item => emojiOptions.find(o => o.unicode == item._emoji.name) && item.me == false)
+            .filter(item => emojiOptions.find(o => o.unicode == item._emoji.name))
             .map(item => ({
                 option: item._emoji.name,
                 count: item.count
             }))
 
         await poll.ref.update({reactions})
+	    console.log(reactions)
 
         if(reactions.length == 0){
-            message.channel.send({embed: {
+            message.channel.send({embeds: [{
                 title: `${pollEmoji} poll #${timestamp} closed!`,
                 description: `no clear winner :(`
-            }})
+            }]})
 
             return;
         }
@@ -95,9 +97,9 @@ module.exports = {
         const victor = reactions.reduce((prev,cur) => prev.count > cur.count ? prev: cur)
         const victorMessage = poll.data().options[emojiOptions.findIndex(e => e.unicode == victor.option)]
 
-        message.channel.send({embed: {
+        message.channel.send({embeds: [{
             title: `${pollEmoji} poll #${timestamp} closed!`,
             description: `option "${victorMessage}" is the clear winner!`
-        }})
+        }]})
     }
 }

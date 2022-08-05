@@ -1,8 +1,7 @@
-#!/usr/bin/env nodejs
+#!/usr/bin/env node
 
 const discord = require('discord.js')
 const fs = require('fs');
-const { execSync } = require('child_process');
 const format = require('date-format');
 
 require('dotenv').config();
@@ -34,9 +33,15 @@ let negativeWords = [
 ];
 
 const {db} = require('./firebase.js');
-const myIntents = new discord.Intents(['GUILD_PRESENCES']);
+
 const client = new discord.Client({
-    intents: myIntents
+    intents: [
+	    discord.GatewayIntentBits.Guilds,
+	    discord.GatewayIntentBits.MessageContent,
+	    discord.GatewayIntentBits.GuildMessages,
+	    discord.GatewayIntentBits.GuildMessageReactions,
+	    discord.GatewayIntentBits.GuildVoiceStates,
+    ]
 });
 
 client.commands = new discord.Collection()
@@ -56,44 +61,14 @@ const setBotActivity = status =>
 entregaDate = new Date("September 8, 2022 09:00:00 UTC+1")
 
 client.once('ready', async () => {
-    console.log('ready!')
+	console.log('ready!')
 
-    /*const guild = client.guilds.cache.find(guild => guild.id == '822125327722610705');
-    const roleEI = guild.roles.cache.find(role => role.id == "822126081867382784")
+	setBotActivity('online')
+	client.user.setActivity('data farming this server')
 
-    const member = await guild.members.fetch('975711811083067422');
-    member.roles.add(roleEI)*/
-
-    setBotActivity('online')
-
-    /*const projChannel = client.channels.cache.get(projInfServer)
-    const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
-    const notifHour = 0;
-    const notifMinute = 0;
-
-    let prevPin = undefined
-
-    cron.schedule(`${notifMinute} ${notifHour} * * *`,() => {
-        const currDate = new Date()
-
-        const diffDays = Math.ceil(Math.abs((entregaDate.getTime() - currDate.getTime()) / oneDay));
-        projChannel
-            .send(`<@&${projRole}> faltam ${diffDays} dias até à entrega`)
-            .then(async msg => {
-                const pin = await msg.pin()
-
-                if(prevPin){
-                    await prevPin.unpin()
-                }
-
-                prevPin = pin
-            })
-        
-        //console.log(`faltam ${diffDays} dias prá entrega`);
-    })*/
 })
 
-client.on('message', async message => {
+client.on('messageCreate', async message => {
     if(message.author.bot || ![testServer,proteinaServer].includes(message.guild.id)) return;
 
     {
@@ -181,6 +156,8 @@ client.on('guildMemberAdd', member => {
 */
 
 client.on('messageReactionAdd', async (reaction, user) => {
+	console.log(reaction.message.channel.id)
+	console.log(reaction.message.id)
     //console.log(reaction.message.reactions.cache.map(r => r.users.cache))
     //return;
     if(user.bot == true){
@@ -194,7 +171,6 @@ client.on('messageReactionAdd', async (reaction, user) => {
     const polls = (await db.collection('poll')
                             .where('channelID','==',reaction.message.channel.id)
                             .where('messageID','==',reaction.message.id)
-                            .where('reactions','==',null)
                             .get()).docs
 
     if(polls.length == 0){
@@ -215,47 +191,6 @@ client.on('messageReactionAdd', async (reaction, user) => {
     }
 
 });
-
-client.on("presenceUpdate", function (oldPresence, newPresence) {
-    const sendTelemetry = (presence,change) => {
-        const obj = {
-            change,
-            userID: presence.user.id,
-            status: presence.status,
-            devices: presence.clientStatus,
-            activities: presence.activities.map(a => ({name:a.name,type:a.type}))
-        }
-
-        db.collection('presence')
-            .doc(new Date().getTime().toString())
-            .set(obj)
-    }
-
-    if(newPresence.user.id == process.env.NSUR && newPresence.guild.id == proteinaServer){
-        console.log('hey')
-        if(!oldPresence){
-            sendTelemetry(newPresence)
-            return;
-        }
-
-        if(oldPresence.status != newPresence.status){
-            sendTelemetry(newPresence,'status')
-        }
-        else if(JSON.stringify(oldPresence.clientStatus) != JSON.stringify(newPresence.clientStatus)){
-            sendTelemetry(newPresence,'devices')
-        }
-
-        else if(
-            !(oldPresence.activities.length == 0 && newPresence.activities.length == 0)
-            && (
-                (oldPresence.activities.length != newPresence.activities.length)
-                || (oldPresence.activities[0].name != newPresence.activities[0].name)
-            )){
-            sendTelemetry(newPresence,'activities')
-        }
-
-    }
-})
 
 client.on('messageDelete', async message => {
     if(message.author.bot)

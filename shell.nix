@@ -1,14 +1,18 @@
 {pkgs ? import <nixpkgs> {}}:
 
-(pkgs.buildFHSUserEnv {
+with pkgs; mkShell {
   name = "discord-fodido";
-  targetPkgs = pkgs: with pkgs; [
-    nodejs
+  nativeBuildInputs = [
     heroku
-    glibc
-    gcc
+    stdenv.cc
     python38
     gnumake
+    pkg-config
+    libstdcxx5
+  ];
+  buildInputs = [
+    nodejs-18_x
+    nodePackages.npm-check-updates
   ];
   
-}).env
+}

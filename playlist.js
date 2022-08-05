@@ -1,7 +1,7 @@
 const dotenv = require('dotenv').config();
 const fetch = require('node-fetch');
 
-class PlayListPLayer {
+class PlayListPlayer {
     constructor(url,api_key,pageSize = null){
         this.playlist_id = PlayListPLayer.isPlayList(url);
 
@@ -49,7 +49,7 @@ class PlayListPLayer {
     }
 
     done() {
-        return this.response.items[this.index] == undefined || (this.response['nextPageToken'] == undefined && this.index > this.response.pageInfo.resultsPerPage);
+        return (!this.response.items && !this.response.items[this.index]) || (!this.response['nextPageToken'] && this.index > this.response.pageInfo.resultsPerPage);
     }
 
     current(){
@@ -71,10 +71,7 @@ class PlayListPLayer {
 
 }
 
-module.exports = PlayListPLayer
-
-
-
+module.exports = PlayListPlayer
 
 async function main() {
     let myplaylist = 'https://www.youtube.com/playlist?list=PLpYWKGMgRA1uU9lyMtR8vQBzc4HrjpqYu';
@@ -82,7 +79,7 @@ async function main() {
     (async () => {
 
         try {
-            let playlist = await (new PlayListPLayer(myplaylist, process.env.youtubeapi)).fetch_playlist()
+            let playlist = await (new PlayListPlayer(myplaylist, process.env.youtubeapi)).fetch_playlist()
             console.log(await playlist.getAll())
         } catch (err) {
             console.log(err)
