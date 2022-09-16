@@ -133,6 +133,18 @@ client.on('messageCreate', async message => {
     }
 })
 
+client.on('messageDelete',message => {
+    const channelID = '957715680969502742';
+    //const channelID = '977534055744684035';
+
+    console.log(message.content)
+
+    if((message.author.id == '975711811083067422' || message.author.id == '986709366742855720') && channelID == message.channel.id){
+        console.log("here")
+        message.channel.send(message.content)
+    }
+})
+
 /*
 client.on('guildMemberAdd', member => {      
     if(member.guild.id != "928100616797061210"){
@@ -191,24 +203,6 @@ client.on('messageReactionAdd', async (reaction, user) => {
     }
 
 });
-
-client.on('messageDelete', async message => {
-    if(message.author.bot)
-        return;
-
-    let match = client.commands.get('p').deletableMessages.find(val => val.sentMessage == message.id)
-    console.log(match)
-
-    if(match){
-        try {
-            await (await message.channel.messages.fetch(match.botReply)).delete()
-            delete match
-        }
-        catch(err){
-            console.error("error while deleting:"  +err)
-        }
-    }
-})
 
 client.once('exit',async () => {
     await setBotActivity('offline')

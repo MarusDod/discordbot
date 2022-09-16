@@ -13,8 +13,8 @@ CXX='g++'
 export CXX
 DETERMINISTIC_BUILD='1'
 export DETERMINISTIC_BUILD
-EPOCHREALTIME='1658503085.237831'
-EPOCHSECONDS='1658503085'
+EPOCHREALTIME='1662663287.789212'
+EPOCHSECONDS='1662663287'
 HOSTTYPE='x86_64'
 HOST_PATH='/nix/store/23av0zm0dad98f52g2lklscp2n7jz629-nodejs-18.2.0/bin:/nix/store/7n4pckz9qzrqmhxip12apz13c0spmf8j-npm-check-updates-13.0.1/bin:/nix/store/2zxip96ccjx0nw24kfpjq3wl7kcx6035-coreutils-9.0/bin:/nix/store/7jlx58szzrl3rxdzn2armpj2bbdk6iwn-findutils-4.9.0/bin:/nix/store/8zj2dvlw19ibkm724hvypin0qfyqvd1r-diffutils-3.8/bin:/nix/store/r7xx3qldfz84jzxj11hjsimz8rrnbmy1-gnused-4.8/bin:/nix/store/7fby34n0m9ir3d5ps87knbynakn5hgmv-gnugrep-3.7/bin:/nix/store/cnhyiyd3h0f7i2kwnnx9182iiwpg6z9g-gawk-5.1.1/bin:/nix/store/frk1azph33m78h3psfsbjkibbaj14v34-gnutar-1.34/bin:/nix/store/8xr3dn5c0yihvhy8vgjvk7wylirmg60v-gzip-1.12/bin:/nix/store/pblyck39k9mb069pvlk6l6wd0kr4c7ys-bzip2-1.0.6.0.2-bin/bin:/nix/store/pknwp5wjdqan68rhhdqir0hkwax3l1b7-gnumake-4.3/bin:/nix/store/40iwnlr30ykqm5ynm0bbk6bsjjc750ad-bash-5.1-p16/bin:/nix/store/1hma8kgyl2is773v3dwvxws9pwrz0fw5-patch-2.7.6/bin:/nix/store/spni8gxv8z1fvn7mrwzyhjiz9ggh3wmq-xz-5.2.5-bin/bin'
 export HOST_PATH
@@ -36,7 +36,7 @@ NIX_CC='/nix/store/2hrxwmv8xl4wpgjna5dvypadxqzx9yqw-gcc-wrapper-11.3.0'
 export NIX_CC
 NIX_CC_WRAPPER_TARGET_HOST_x86_64_unknown_linux_gnu='1'
 export NIX_CC_WRAPPER_TARGET_HOST_x86_64_unknown_linux_gnu
-NIX_CFLAGS_COMPILE=' -frandom-seed=f5ffzm6w2a -isystem /nix/store/x0fkg3bmp5svah4zblm0z9zxvw85icbn-python3-3.8.13/include -isystem /nix/store/pknwp5wjdqan68rhhdqir0hkwax3l1b7-gnumake-4.3/include -isystem /nix/store/23av0zm0dad98f52g2lklscp2n7jz629-nodejs-18.2.0/include -isystem /nix/store/x0fkg3bmp5svah4zblm0z9zxvw85icbn-python3-3.8.13/include -isystem /nix/store/pknwp5wjdqan68rhhdqir0hkwax3l1b7-gnumake-4.3/include -isystem /nix/store/23av0zm0dad98f52g2lklscp2n7jz629-nodejs-18.2.0/include'
+NIX_CFLAGS_COMPILE=' -frandom-seed=93dycmqk4y -isystem /nix/store/x0fkg3bmp5svah4zblm0z9zxvw85icbn-python3-3.8.13/include -isystem /nix/store/x0fkg3bmp5svah4zblm0z9zxvw85icbn-python3-3.8.13/include -isystem /nix/store/pknwp5wjdqan68rhhdqir0hkwax3l1b7-gnumake-4.3/include -isystem /nix/store/pknwp5wjdqan68rhhdqir0hkwax3l1b7-gnumake-4.3/include -isystem /nix/store/23av0zm0dad98f52g2lklscp2n7jz629-nodejs-18.2.0/include -isystem /nix/store/23av0zm0dad98f52g2lklscp2n7jz629-nodejs-18.2.0/include -isystem /nix/store/x0fkg3bmp5svah4zblm0z9zxvw85icbn-python3-3.8.13/include -isystem /nix/store/x0fkg3bmp5svah4zblm0z9zxvw85icbn-python3-3.8.13/include -isystem /nix/store/pknwp5wjdqan68rhhdqir0hkwax3l1b7-gnumake-4.3/include -isystem /nix/store/pknwp5wjdqan68rhhdqir0hkwax3l1b7-gnumake-4.3/include -isystem /nix/store/23av0zm0dad98f52g2lklscp2n7jz629-nodejs-18.2.0/include -isystem /nix/store/23av0zm0dad98f52g2lklscp2n7jz629-nodejs-18.2.0/include'
 export NIX_CFLAGS_COMPILE
 NIX_ENFORCE_NO_NATIVE='1'
 export NIX_ENFORCE_NO_NATIVE
@@ -64,7 +64,7 @@ OLDPWD=''
 export OLDPWD
 OPTERR='1'
 OSTYPE='linux-gnu'
-PATH='/nix/store/lx7qfgry6zagvkn4lnb7rng7wckf1m31-heroku-7.59.2/bin:/nix/store/2hrxwmv8xl4wpgjna5dvypadxqzx9yqw-gcc-wrapper-11.3.0/bin:/nix/store/lfbhrvk2l5xq1qljlkmb5n0ayx8rydaz-gcc-11.3.0/bin:/nix/store/9g970lv9pg342czp7p1p1jb102ds2bna-glibc-2.34-210-bin/bin:/nix/store/2zxip96ccjx0nw24kfpjq3wl7kcx6035-coreutils-9.0/bin:/nix/store/pbwawmgi6ih48fqfh90dw5yfvqygvz7x-binutils-wrapper-2.38/bin:/nix/store/bffjk93gw5y9z3l90j56zw87g0yjgwl4-binutils-2.38/bin:/nix/store/x0fkg3bmp5svah4zblm0z9zxvw85icbn-python3-3.8.13/bin:/nix/store/pknwp5wjdqan68rhhdqir0hkwax3l1b7-gnumake-4.3/bin:/nix/store/vricq7h5ivf59sf61bpvlqhq66mwvn9a-pkg-config-wrapper-0.29.2/bin:/nix/store/n0iy3qa7nskhmlgw078ffk9kdmk0krzc-patchelf-0.14.5/bin:/nix/store/23av0zm0dad98f52g2lklscp2n7jz629-nodejs-18.2.0/bin:/nix/store/7n4pckz9qzrqmhxip12apz13c0spmf8j-npm-check-updates-13.0.1/bin:/nix/store/2zxip96ccjx0nw24kfpjq3wl7kcx6035-coreutils-9.0/bin:/nix/store/7jlx58szzrl3rxdzn2armpj2bbdk6iwn-findutils-4.9.0/bin:/nix/store/8zj2dvlw19ibkm724hvypin0qfyqvd1r-diffutils-3.8/bin:/nix/store/r7xx3qldfz84jzxj11hjsimz8rrnbmy1-gnused-4.8/bin:/nix/store/7fby34n0m9ir3d5ps87knbynakn5hgmv-gnugrep-3.7/bin:/nix/store/cnhyiyd3h0f7i2kwnnx9182iiwpg6z9g-gawk-5.1.1/bin:/nix/store/frk1azph33m78h3psfsbjkibbaj14v34-gnutar-1.34/bin:/nix/store/8xr3dn5c0yihvhy8vgjvk7wylirmg60v-gzip-1.12/bin:/nix/store/pblyck39k9mb069pvlk6l6wd0kr4c7ys-bzip2-1.0.6.0.2-bin/bin:/nix/store/pknwp5wjdqan68rhhdqir0hkwax3l1b7-gnumake-4.3/bin:/nix/store/40iwnlr30ykqm5ynm0bbk6bsjjc750ad-bash-5.1-p16/bin:/nix/store/1hma8kgyl2is773v3dwvxws9pwrz0fw5-patch-2.7.6/bin:/nix/store/spni8gxv8z1fvn7mrwzyhjiz9ggh3wmq-xz-5.2.5-bin/bin'
+PATH='/nix/store/2hrxwmv8xl4wpgjna5dvypadxqzx9yqw-gcc-wrapper-11.3.0/bin:/nix/store/lfbhrvk2l5xq1qljlkmb5n0ayx8rydaz-gcc-11.3.0/bin:/nix/store/9g970lv9pg342czp7p1p1jb102ds2bna-glibc-2.34-210-bin/bin:/nix/store/2zxip96ccjx0nw24kfpjq3wl7kcx6035-coreutils-9.0/bin:/nix/store/pbwawmgi6ih48fqfh90dw5yfvqygvz7x-binutils-wrapper-2.38/bin:/nix/store/bffjk93gw5y9z3l90j56zw87g0yjgwl4-binutils-2.38/bin:/nix/store/x0fkg3bmp5svah4zblm0z9zxvw85icbn-python3-3.8.13/bin:/nix/store/pknwp5wjdqan68rhhdqir0hkwax3l1b7-gnumake-4.3/bin:/nix/store/vricq7h5ivf59sf61bpvlqhq66mwvn9a-pkg-config-wrapper-0.29.2/bin:/nix/store/n0iy3qa7nskhmlgw078ffk9kdmk0krzc-patchelf-0.14.5/bin:/nix/store/23av0zm0dad98f52g2lklscp2n7jz629-nodejs-18.2.0/bin:/nix/store/7n4pckz9qzrqmhxip12apz13c0spmf8j-npm-check-updates-13.0.1/bin:/nix/store/2zxip96ccjx0nw24kfpjq3wl7kcx6035-coreutils-9.0/bin:/nix/store/7jlx58szzrl3rxdzn2armpj2bbdk6iwn-findutils-4.9.0/bin:/nix/store/8zj2dvlw19ibkm724hvypin0qfyqvd1r-diffutils-3.8/bin:/nix/store/r7xx3qldfz84jzxj11hjsimz8rrnbmy1-gnused-4.8/bin:/nix/store/7fby34n0m9ir3d5ps87knbynakn5hgmv-gnugrep-3.7/bin:/nix/store/cnhyiyd3h0f7i2kwnnx9182iiwpg6z9g-gawk-5.1.1/bin:/nix/store/frk1azph33m78h3psfsbjkibbaj14v34-gnutar-1.34/bin:/nix/store/8xr3dn5c0yihvhy8vgjvk7wylirmg60v-gzip-1.12/bin:/nix/store/pblyck39k9mb069pvlk6l6wd0kr4c7ys-bzip2-1.0.6.0.2-bin/bin:/nix/store/pknwp5wjdqan68rhhdqir0hkwax3l1b7-gnumake-4.3/bin:/nix/store/40iwnlr30ykqm5ynm0bbk6bsjjc750ad-bash-5.1-p16/bin:/nix/store/1hma8kgyl2is773v3dwvxws9pwrz0fw5-patch-2.7.6/bin:/nix/store/spni8gxv8z1fvn7mrwzyhjiz9ggh3wmq-xz-5.2.5-bin/bin'
 export PATH
 PKG_CONFIG='pkg-config'
 export PKG_CONFIG
@@ -91,7 +91,7 @@ STRINGS='strings'
 export STRINGS
 STRIP='strip'
 export STRIP
-XDG_DATA_DIRS='/nix/store/lx7qfgry6zagvkn4lnb7rng7wckf1m31-heroku-7.59.2/share:/nix/store/x0fkg3bmp5svah4zblm0z9zxvw85icbn-python3-3.8.13/share:/nix/store/pknwp5wjdqan68rhhdqir0hkwax3l1b7-gnumake-4.3/share:/nix/store/vricq7h5ivf59sf61bpvlqhq66mwvn9a-pkg-config-wrapper-0.29.2/share:/nix/store/n0iy3qa7nskhmlgw078ffk9kdmk0krzc-patchelf-0.14.5/share'
+XDG_DATA_DIRS='/nix/store/x0fkg3bmp5svah4zblm0z9zxvw85icbn-python3-3.8.13/share:/nix/store/pknwp5wjdqan68rhhdqir0hkwax3l1b7-gnumake-4.3/share:/nix/store/vricq7h5ivf59sf61bpvlqhq66mwvn9a-pkg-config-wrapper-0.29.2/share:/nix/store/n0iy3qa7nskhmlgw078ffk9kdmk0krzc-patchelf-0.14.5/share'
 export XDG_DATA_DIRS
 _PYTHON_HOST_PLATFORM='linux-x86_64'
 export _PYTHON_HOST_PLATFORM
@@ -139,15 +139,15 @@ export dontAddDisableDepTrack
 declare -a envBuildBuildHooks=('addPythonPath' 'sysconfigdataHook' )
 declare -a envBuildHostHooks=('addPythonPath' 'sysconfigdataHook' )
 declare -a envBuildTargetHooks=('addPythonPath' 'sysconfigdataHook' )
-declare -a envHostHostHooks=('ccWrapper_addCVars' 'bintoolsWrapper_addLDVars' 'pkgConfigWrapper_addPkgConfigPath' 'addNodePath' )
-declare -a envHostTargetHooks=('ccWrapper_addCVars' 'bintoolsWrapper_addLDVars' 'pkgConfigWrapper_addPkgConfigPath' 'addNodePath' )
+declare -a envHostHostHooks=('ccWrapper_addCVars' 'bintoolsWrapper_addLDVars' 'pkgConfigWrapper_addPkgConfigPath' 'ccWrapper_addCVars' 'addNodePath' )
+declare -a envHostTargetHooks=('ccWrapper_addCVars' 'bintoolsWrapper_addLDVars' 'pkgConfigWrapper_addPkgConfigPath' 'ccWrapper_addCVars' 'addNodePath' )
 declare -a envTargetTargetHooks=()
 declare -a fixupOutputHooks=('if [ -z "${dontPatchELF-}" ]; then patchELF "$prefix"; fi' '_makeSymlinksRelative' 'if [ -z "${dontGzipMan-}" ]; then compressManPages "$prefix"; fi' '_doStrip' 'patchShebangsAuto' '_pruneLibtoolFiles' 'if [[ -z "${noAuditTmpdir-}" && -e "$prefix" ]]; then auditTmpdir "$prefix"; fi' '_moveSystemdUserUnits' '_moveSbin' '_moveLib64' )
 guess='8'
 initialPath='/nix/store/2zxip96ccjx0nw24kfpjq3wl7kcx6035-coreutils-9.0 /nix/store/7jlx58szzrl3rxdzn2armpj2bbdk6iwn-findutils-4.9.0 /nix/store/8zj2dvlw19ibkm724hvypin0qfyqvd1r-diffutils-3.8 /nix/store/r7xx3qldfz84jzxj11hjsimz8rrnbmy1-gnused-4.8 /nix/store/7fby34n0m9ir3d5ps87knbynakn5hgmv-gnugrep-3.7 /nix/store/cnhyiyd3h0f7i2kwnnx9182iiwpg6z9g-gawk-5.1.1 /nix/store/frk1azph33m78h3psfsbjkibbaj14v34-gnutar-1.34 /nix/store/8xr3dn5c0yihvhy8vgjvk7wylirmg60v-gzip-1.12 /nix/store/pblyck39k9mb069pvlk6l6wd0kr4c7ys-bzip2-1.0.6.0.2-bin /nix/store/pknwp5wjdqan68rhhdqir0hkwax3l1b7-gnumake-4.3 /nix/store/40iwnlr30ykqm5ynm0bbk6bsjjc750ad-bash-5.1-p16 /nix/store/1hma8kgyl2is773v3dwvxws9pwrz0fw5-patch-2.7.6 /nix/store/spni8gxv8z1fvn7mrwzyhjiz9ggh3wmq-xz-5.2.5-bin'
 name='discord-fodido'
 export name
-nativeBuildInputs='/nix/store/lx7qfgry6zagvkn4lnb7rng7wckf1m31-heroku-7.59.2 /nix/store/2hrxwmv8xl4wpgjna5dvypadxqzx9yqw-gcc-wrapper-11.3.0 /nix/store/x0fkg3bmp5svah4zblm0z9zxvw85icbn-python3-3.8.13 /nix/store/pknwp5wjdqan68rhhdqir0hkwax3l1b7-gnumake-4.3 /nix/store/vricq7h5ivf59sf61bpvlqhq66mwvn9a-pkg-config-wrapper-0.29.2 /nix/store/z0y2ggw4s2zlfkjfjrh7gakfpap72h8h-libstdc++5-3.3.6'
+nativeBuildInputs='/nix/store/2hrxwmv8xl4wpgjna5dvypadxqzx9yqw-gcc-wrapper-11.3.0 /nix/store/x0fkg3bmp5svah4zblm0z9zxvw85icbn-python3-3.8.13 /nix/store/pknwp5wjdqan68rhhdqir0hkwax3l1b7-gnumake-4.3 /nix/store/vricq7h5ivf59sf61bpvlqhq66mwvn9a-pkg-config-wrapper-0.29.2 /nix/store/z0y2ggw4s2zlfkjfjrh7gakfpap72h8h-libstdc++5-3.3.6'
 export nativeBuildInputs
 out='/home/marcos/programming/discord-fodido/outputs/out'
 export out
@@ -168,7 +168,7 @@ phases='buildPhase'
 export phases
 pkg='/nix/store/2hrxwmv8xl4wpgjna5dvypadxqzx9yqw-gcc-wrapper-11.3.0'
 declare -a pkgsBuildBuild=()
-declare -a pkgsBuildHost=('/nix/store/lx7qfgry6zagvkn4lnb7rng7wckf1m31-heroku-7.59.2' '/nix/store/2hrxwmv8xl4wpgjna5dvypadxqzx9yqw-gcc-wrapper-11.3.0' '/nix/store/pbwawmgi6ih48fqfh90dw5yfvqygvz7x-binutils-wrapper-2.38' '/nix/store/x0fkg3bmp5svah4zblm0z9zxvw85icbn-python3-3.8.13' '/nix/store/pknwp5wjdqan68rhhdqir0hkwax3l1b7-gnumake-4.3' '/nix/store/vricq7h5ivf59sf61bpvlqhq66mwvn9a-pkg-config-wrapper-0.29.2' '/nix/store/z0y2ggw4s2zlfkjfjrh7gakfpap72h8h-libstdc++5-3.3.6' '/nix/store/n0iy3qa7nskhmlgw078ffk9kdmk0krzc-patchelf-0.14.5' '/nix/store/59jmzisg8fkm9c125fw384dqq1np602l-move-docs.sh' '/nix/store/kxw6q8v6isaqjm702d71n2421cxamq68-make-symlinks-relative.sh' '/nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh' '/nix/store/bkxq1nfi6grmww5756ynr1aph7w04lkk-strip.sh' '/nix/store/bnj8d7mvbkg3vdb07yz74yhl3g107qq5-patch-shebangs.sh' '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh' '/nix/store/8zxndz5ag0p6s526c2xyllhk1nrn4c3i-audit-tmpdir.sh' '/nix/store/c8n9kcdddp9np665xz6ri61b383nxvz8-move-systemd-user-units.sh' '/nix/store/1i5y55x4b4m9qkx5dqbmr1r6bvrqbanw-multiple-outputs.sh' '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh' '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh' '/nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh' '/nix/store/wlwcf1nw2b21m4gghj70hbg1v7x53ld8-reproducible-builds.sh' )
+declare -a pkgsBuildHost=('/nix/store/2hrxwmv8xl4wpgjna5dvypadxqzx9yqw-gcc-wrapper-11.3.0' '/nix/store/pbwawmgi6ih48fqfh90dw5yfvqygvz7x-binutils-wrapper-2.38' '/nix/store/x0fkg3bmp5svah4zblm0z9zxvw85icbn-python3-3.8.13' '/nix/store/pknwp5wjdqan68rhhdqir0hkwax3l1b7-gnumake-4.3' '/nix/store/vricq7h5ivf59sf61bpvlqhq66mwvn9a-pkg-config-wrapper-0.29.2' '/nix/store/z0y2ggw4s2zlfkjfjrh7gakfpap72h8h-libstdc++5-3.3.6' '/nix/store/n0iy3qa7nskhmlgw078ffk9kdmk0krzc-patchelf-0.14.5' '/nix/store/59jmzisg8fkm9c125fw384dqq1np602l-move-docs.sh' '/nix/store/kxw6q8v6isaqjm702d71n2421cxamq68-make-symlinks-relative.sh' '/nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh' '/nix/store/bkxq1nfi6grmww5756ynr1aph7w04lkk-strip.sh' '/nix/store/bnj8d7mvbkg3vdb07yz74yhl3g107qq5-patch-shebangs.sh' '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh' '/nix/store/8zxndz5ag0p6s526c2xyllhk1nrn4c3i-audit-tmpdir.sh' '/nix/store/c8n9kcdddp9np665xz6ri61b383nxvz8-move-systemd-user-units.sh' '/nix/store/1i5y55x4b4m9qkx5dqbmr1r6bvrqbanw-multiple-outputs.sh' '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh' '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh' '/nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh' '/nix/store/wlwcf1nw2b21m4gghj70hbg1v7x53ld8-reproducible-builds.sh' '/nix/store/2hrxwmv8xl4wpgjna5dvypadxqzx9yqw-gcc-wrapper-11.3.0' )
 declare -a pkgsBuildTarget=()
 declare -a pkgsHostHost=()
 declare -a pkgsHostTarget=('/nix/store/23av0zm0dad98f52g2lklscp2n7jz629-nodejs-18.2.0' '/nix/store/7n4pckz9qzrqmhxip12apz13c0spmf8j-npm-check-updates-13.0.1' )
@@ -1064,7 +1064,7 @@ getRole ()
             role_post='_FOR_TARGET'
         ;;
         *)
-            echo "pkg-config-wrapper-0.29.2: used as improper sort of dependency" 1>&2;
+            echo "gcc-wrapper-11.3.0: used as improper sort of dependency" 1>&2;
             return 1
         ;;
     esac
@@ -1084,16 +1084,16 @@ getTargetRoleWrapper ()
  
     case $targetOffset in 
         -1)
-            export NIX_PKG_CONFIG_WRAPPER_TARGET_BUILD_x86_64_unknown_linux_gnu=1
+            export NIX_CC_WRAPPER_TARGET_BUILD_x86_64_unknown_linux_gnu=1
         ;;
         0)
-            export NIX_PKG_CONFIG_WRAPPER_TARGET_HOST_x86_64_unknown_linux_gnu=1
+            export NIX_CC_WRAPPER_TARGET_HOST_x86_64_unknown_linux_gnu=1
         ;;
         1)
-            export NIX_PKG_CONFIG_WRAPPER_TARGET_TARGET_x86_64_unknown_linux_gnu=1
+            export NIX_CC_WRAPPER_TARGET_TARGET_x86_64_unknown_linux_gnu=1
         ;;
         *)
-            echo "pkg-config-wrapper-0.29.2: used as improper sort of dependency" 1>&2;
+            echo "gcc-wrapper-11.3.0: used as improper sort of dependency" 1>&2;
             return 1
         ;;
     esac

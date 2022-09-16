@@ -119,6 +119,10 @@ module.exports = {
 		voiceChannel.send(`The audio player has started playing! ${songs[index]}`);
 	});
 
+	player.on('error', err => {
+		console.error(err)
+	})
+
 	player.on(voice.AudioPlayerStatus.Idle, () => {
 		if(loop === false){
 			++index
@@ -181,12 +185,14 @@ module.exports = {
 	});
 
 	connection.on(voice.VoiceConnectionStatus.Disconnected, async (oldState, newState) => {
+		console.log(newState)
 		try {
 			await Promise.race([
-				entersState(connection, voice.VoiceConnectionStatus.Signalling, 1_000),
-				entersState(connection, voice.VoiceConnectionStatus.Connecting, 1_000),
+				voice.entersState(connection, voice.VoiceConnectionStatus.Signalling, 1_000),
+				voice.entersState(connection, voice.VoiceConnectionStatus.Connecting, 1_000),
 			]);
 		} catch (error) {
+			console.log("disconnected",error)
 			connection.destroy();
 		}
 	});

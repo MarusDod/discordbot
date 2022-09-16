@@ -11,7 +11,12 @@ module.exports = {
 
         client.getQuotes({symbol:args[0],convert: convertCurrency})
             .then(x => {
-                message.channel.send(`price of ${args[0]} is ${x.data[args[0]].quote[convertCurrency].price} ${convertCurrency}`)
+		try {
+		    message.channel.send(`price of ${args[0]} is ${x.data[args[0]].quote[convertCurrency].price} ${convertCurrency}`)
+		}
+		catch(err) {
+		    console.error(err)
+		}
             })
         },
 };

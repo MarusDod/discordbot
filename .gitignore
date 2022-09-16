@@ -6,3 +6,4 @@ discord/
 .github/
 /node_modules/
 videos/*
+.direnv/**
